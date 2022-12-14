@@ -1,8 +1,7 @@
 ﻿Console.WriteLine("Введите значения через пробел: ");
 string[] array = Console.ReadLine()!.Split(" ");
-
 string[] result = FindLessThan(array, 3);
-
+System.Console.WriteLine($"[{string.Join(", ", array)}] -> [{string.Join(", ", result)}]");
 string[] FindLessThan(string[] input, int n) 
 {
     string[] output = new string[CountLessThan(input, n)];
